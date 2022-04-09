@@ -5,6 +5,7 @@ const typeDefs = gql`
         id: ID
         name: String
         price: String
+        authorId: ID
         author: Author
     }
     type Author{

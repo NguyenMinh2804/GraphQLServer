@@ -14,18 +14,18 @@ const resolvers = {
            return  authors.find(author => author.id == args.id);
         },
     },
-    Book: {
-        author: (parent, args) =>
-        {
-            return authors.find(author => author.id == parent.authorId)
-        }
-    },
-    Author: {
-        books: (parent, args) =>
-        {
-            return books.filter(book => book.authorId == parent.id)
-        }
-    },
+    // Book: {
+    //     author: (parent, args) =>
+    //     {
+    //         return authors.find(author => author.id == parent.authorId)
+    //     }
+    // },
+    // Author: {
+    //     books: (parent, args) =>
+    //     {
+    //         return books.filter(book => book.authorId == parent.id)
+    //     }
+    // },
 
     // MUTATION
     Mutation: {
